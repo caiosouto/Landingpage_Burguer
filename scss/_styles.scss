@@ -110,15 +110,58 @@ header {
             display: flex;
             align-items: center;
             gap: 3.7rem;
-            :after {
+            &:after {
                 content: " ";
                 flex: 1;
+                max-width: 29rem;
                 height: 2px;
                 background: url('../img/line.svg') no-repeat center center;
                 display: inline-block;
             }
         }
-    }
+        .value {
+            position: relative;
+            margin-top: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 3.7rem;
+            &:after {
+                content: " ";
+                background: url('../img/arrow-btn.svg') no-repeat center center;
+                width: 4.3rem;
+                height: 3.8rem;
+                position: absolute;
+                right: -67px;
+                top: 30px;
+            }
+            h2 {
+                color: var(--yellow);
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 6.5rem;
+                font-weight: bold;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
 
-    
+            span {
+                color: var(--brown);
+                font-size: 1.3rem;
+                font-weight: 700;
+                line-height: 2.3rem;
+                letter-spacing: -0.371px;
+            }
+            button {
+                padding: 22px 52px;
+                background-color: var(--brown);
+                border-radius: 6px;
+                box-shadow: 0px 10px 40px 0px rgba(89, 41, 28, 0.60);
+                color: #FFF;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }    
 }
