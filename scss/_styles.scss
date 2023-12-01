@@ -13,3 +13,112 @@
     --bege: #F5ECE7;
     --orenge: #ED7902;   
 }
+
+html {
+    font-size: 62.5%;
+}
+.container {
+    width: 100%;
+    max-width: 124.9rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 9rem;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;        
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+        
+        ul {
+        display: flex;
+        align-items: center;
+        gap: 7.7rem;
+
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+
+            span {
+                color: #59291c;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.4rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+          }
+
+          
+        }
+        }
+    }
+}
+
+.s-hero {
+    width: 100%;
+    height: 62.3rem;
+    background: linear-gradient(164deg, rgba(212, 86, 22, 0) 3.82%, #EFE1DA 90.95%);
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .left-container {
+        padding-top: 12rem;
+        flex: 1;
+        max-width: 52.7rem;
+
+        h3 {
+            color: var(--yellow);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 3.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 2.2rem;
+            display: flex;
+            align-items: center;
+            gap: 3.7rem;
+            :after {
+                content: " ";
+                flex: 1;
+                height: 2px;
+                background: url('../img/line.svg') no-repeat center center;
+                display: inline-block;
+            }
+        }
+    }
+
+    
+}
