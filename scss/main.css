@@ -86,6 +86,7 @@ header nav ul li a span {
 .s-hero .container {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .s-hero .left-container {
   padding-top: 12rem;
@@ -153,4 +154,80 @@ header nav ul li a span {
   font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+.s-hero .right-container {
+  position: relative;
+  flex: 1;
+  max-width: 52.8rem;
+  height: 66.3rem;
+  background-color: var(--yellow);
+  border-radius: 0px 0px 12px 12px;
+  padding-top: 9.5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+.s-hero .right-container .image {
+  position: absolute;
+  width: 68.4rem;
+  height: 49.2rem;
+}
+.s-hero .right-container .image img {
+  position: absolute;
+}
+.s-hero .right-container .image img.refri {
+  left: 0;
+  top: 2.5rem;
+  z-index: 1;
+}
+.s-hero .right-container .image img.fritas {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.s-hero .right-container .image img.lanche {
+  z-index: 2;
+  left: 5.2rem;
+  bottom: 0;
+}
+.s-hero .right-container .image img.logo {
+  bottom: 6px;
+  right: 1rem;
+  z-index: 3;
+}
+.s-hero .right-container .offer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.s-hero .right-container .offer:before {
+  content: " ";
+  width: 8rem;
+  height: 1.4rem;
+  background: url("../img/line-left.svg") no-repeat center center;
+  display: inline-block;
+}
+.s-hero .right-container .offer:after {
+  content: " ";
+  width: 8rem;
+  height: 1.4rem;
+  background: url("../img/line-left.svg") no-repeat center center;
+  display: inline-block;
+}
+.s-hero .right-container .offer p {
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  display: flex;
+  align-items: center;
+}
+.s-hero .right-container .offer p img {
+  margin-right: 1.6rem;
+}
+.s-hero .right-container .offer p strong {
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
