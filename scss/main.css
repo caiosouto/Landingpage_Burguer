@@ -288,4 +288,45 @@ header nav ul li a span {
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: -0.301px;
+}
+
+.s-combos {
+  padding: 7rem 0;
+}
+.s-combos .highlights {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+.s-combos .highlights > .box {
+  width: 26.3rem !important;
+  background-color: var(--yellow) !important;
+}
+.s-combos .highlights .box {
+  border-radius: 1.2rem;
+  background-color: var(--bege);
+  width: 21.8rem;
+  height: 14.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9px;
+}
+.s-combos .highlights .box h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.s-combos .highlights ul {
+  flex: 1;
+  max-width: 92.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
