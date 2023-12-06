@@ -361,5 +361,92 @@ header {
             gap: 1.6rem;
         }
     }
+    .area-slide {
+        position: relative;
+        margin-top: 6.2rem;
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6.6rem;
+            height: 6.6rem;
+            background-color: var(--yellow);
+            z-index: 2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.swiper-button-disabled {
+                opacity: 0.8;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+
+            &.prev {
+                left: -3.3rem;
+            }
+            &.next {
+                right: -3.3rem;
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+        .slide-combos {
+            overflow: hidden;
+            .card-combo {
+                width: 100%;
+                height: 49.3rem;
+                background-color: var(--bege);
+                border-radius: 6px;
+                overflow: hidden;
+                .image {
+                    position: relative;
+                    width: 100%;
+                    height: 34rem;
+                    overflow: hidden;
+                    border-bottom: 3px dotted var(--white);
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    button {
+                        position: absolute;
+                        top: 2.5rem;
+                        right: 2.6rem;
+                        z-index: 2;
+                        width: 3.8rem;
+                        height: 3.8rem;
+                        background-color: var(--white);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .info {
+                    padding-top: 3.6rem 4.4rem;
+                    strong {
+                        color: var(--brown);
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        letter-spacing: -0.201px;
+                        margin-bottom: 1.4rem;
+                        display: block;
+                    }
+
+                    h3 {
+                        color: var(--orenge);
+                        font-family: 'Ubuntu', sans-serif;
+                        font-size: 3.2rem;
+                        font-weight: bold;
+                        letter-spacing: 1.477px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
 
 }
