@@ -413,4 +413,38 @@ header nav ul li a span {
   font-weight: bold;
   letter-spacing: 1.477px;
   text-transform: uppercase;
+}
+.s-combos .ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.7rem;
+}
+.s-combos .ctrl .swiper-pagination {
+  position: relative;
+  bottom: 0;
+  width: auto;
+}
+.s-combos .ctrl .swiper-pagination-bullet {
+  background-color: var(--orenge);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.s-combos .ctrl .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--orenge);
+  transform: scale(1.2);
+}
+.s-combos .ctrl button {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.s-combos .ctrl button span {
+  color: var(--yellow);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: -0.176px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

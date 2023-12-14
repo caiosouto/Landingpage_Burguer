@@ -447,6 +447,40 @@ header {
             }
         }
     }
+    .ctrl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4.7rem;
+        .swiper-pagination {
+            position: relative;
+            bottom: 0;
+            width: auto;
+            &-bullet {
+                background-color: var(--orenge);
+                opacity: 0.5;
+                transition: all .3s ease;
+                &-active {
+                    opacity: 1;
+                    background-color: var(--orenge);
+                    transform: scale(1.2);
+                }
+            }
+        }
+        button {
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            span {
+                color: var(--yellow);
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1.4rem;
+                font-weight: bold;
+                letter-spacing: -0.176px;
+                text-transform: uppercase;
+            }
+        }
+    }
 
 
 }

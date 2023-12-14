@@ -3,7 +3,7 @@ var slide_combos = new Swiper('.slide-combos', {
     spaceBetween: 32,
     speed: 800,
     pagination: {
-        el: '',
+        el: '.s-combos .ctrl .swiper-pagination',
         clickable: true
     },
     navigation: {
