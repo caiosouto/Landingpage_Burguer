@@ -71,12 +71,16 @@ header nav ul li a {
   align-items: center;
   gap: 11px;
 }
+header nav ul li a:hover span {
+  color: var(--orenge);
+}
 header nav ul li a span {
-  color: #59291c;
+  color: var(--brown);
   font-family: "Ubuntu", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .s-hero {
@@ -155,6 +159,7 @@ header nav ul li a span {
   font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
+  animation: pulse 2s infinite;
 }
 .s-hero .right-container {
   position: relative;
@@ -183,21 +188,26 @@ header nav ul li a span {
   left: 0;
   top: 2.5rem;
   z-index: 1;
+  animation: fadeLeft 1s forwards;
 }
 .s-hero .right-container .image img.fritas {
   top: 0;
   right: 0;
   z-index: 1;
+  animation: fadeLright 1s forwards;
 }
 .s-hero .right-container .image img.lanche {
   z-index: 2;
   left: 5.2rem;
   bottom: 0;
+  animation: fadeUp 1s forwards;
 }
 .s-hero .right-container .image img.logo {
   bottom: 6px;
   right: 1rem;
   z-index: 3;
+  opacity: 0;
+  animation: zooIn 1s 0.5s forwards;
 }
 .s-hero .right-container .offer {
   position: relative;
@@ -281,6 +291,10 @@ header nav ul li a span {
   justify-content: center;
   gap: 1.9rem;
   padding: 3rem 0;
+  transition: background-color 0.3s ease;
+}
+.s-offer button:hover {
+  background-color: var(--bege);
 }
 .s-offer button span {
   color: var(--blue);
@@ -313,6 +327,7 @@ header nav ul li a span {
   justify-content: center;
   flex-direction: column;
   gap: 9px;
+  transition: all 0.3s ease;
 }
 .s-combos .highlights .box h3 {
   color: #FFF;
@@ -329,6 +344,10 @@ header nav ul li a span {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1.6rem;
+}
+.s-combos .highlights ul li .box:hover {
+  background-color: var(--brown);
+  box-shadow: 0px 10px 40px 0px rgba(89, 41, 28, 0.6);
 }
 .s-combos .area-slide {
   position: relative;
@@ -369,6 +388,9 @@ header nav ul li a span {
   border-radius: 6px;
   overflow: hidden;
 }
+.s-combos .area-slide .slide-combos .card-combo:hover .image > img {
+  transform: scale(1.1);
+}
 .s-combos .area-slide .slide-combos .card-combo .image {
   position: relative;
   width: 100%;
@@ -381,6 +403,7 @@ header nav ul li a span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.5s ease;
 }
 .s-combos .area-slide .slide-combos .card-combo .image button {
   position: absolute;
@@ -440,6 +463,9 @@ header nav ul li a span {
   align-items: center;
   gap: 1.4rem;
 }
+.s-combos .ctrl button:hover span {
+  color: var(--orenge);
+}
 .s-combos .ctrl button span {
   color: var(--yellow);
   font-family: "Ubuntu", sans-serif;
@@ -447,6 +473,7 @@ header nav ul li a span {
   font-weight: bold;
   letter-spacing: -0.176px;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 footer .main-area {
@@ -471,6 +498,10 @@ footer .main-area ul li a {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
   letter-spacing: -0.429px;
+  transition: color 0.3s ease;
+}
+footer .main-area ul li a:hover {
+  color: var(--yellow);
 }
 footer .main-area .logo {
   width: 9.6rem;
@@ -502,6 +533,11 @@ footer .main-area .social ul li a {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+footer .main-area .social ul li a:hover {
+  background-color: var(--orenge);
 }
 footer .copy {
   background-color: #5D2A1C;
@@ -513,4 +549,54 @@ footer .copy p {
   font-size: 1.4rem;
   line-height: 2.3rem;
   letter-spacing: -0.4px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeLright {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeUp {
+  from {
+    transform: translatey(20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes zooIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1px);
+  }
 }/*# sourceMappingURL=main.css.map */
